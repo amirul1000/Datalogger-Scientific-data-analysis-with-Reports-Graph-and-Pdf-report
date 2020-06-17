@@ -1,0 +1,157 @@
+<?php
+                 unset($info);
+			    $info["table"] = "projectinfo";
+				$info["fields"] = array("projectinfo.*"); 
+				$info["where"]   = "1 AND TestID='".$_SESSION['TestID']."'";
+				$arrprojectinfo =  $db->select($info);
+				
+?>				
+				
+	
+  <style type="text/css">
+    <!--
+    table.tableau { text-align: left; }
+    table.tableau td { width: 15mm; font-family: courier; }
+    table.tableau th { width: 15mm; font-family: courier; }							
+    -->
+  </style> 
+<table  cellspacing="0" style="width: 100%; border: solid 1px #000000; border-spacing:0; border-collapse: collapse;">
+   <tr>
+       <td align="center" valign="top"  style="width: 100%;">
+             <table  cellspacing="0" style="width: 100%;">				
+               <tr>
+                   <td align="left"  style="width: 50%;">
+                        CHECKLIST
+                   </td>
+                   <td align="center"  style="width: 50%;">
+                      <img src="../../images/logo.png">
+                   </td>
+               </tr>
+            </table>
+       </td>
+   </tr>
+   <tr>
+        <td align="center" valign="top"  style="width:100%;">
+              <table  cellspacing="0" style="width: 100%; border: solid 1px #000000;">						
+                 <tr>
+                     <td colspan="3" align="center"  style="width: 100%; border: solid 1px #000000;">
+                        project_info :<?=$arrprojectinfo[0]['Test_name']?>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td align="center" style="width: 33%; border: solid 1px #000000;">
+                        project_info/customer :<?=$arrprojectinfo[0]['Customer']?>
+                     </td>
+                     <td align="center" style="width: 33%; border: solid 1px #000000;">
+                        project_info :<?=$arrprojectinfo[0]['Project_No']?>
+                     </td>
+                     <td align="center" style="width: 33%; border: solid 1px #000000;">
+                        project_info :<?=$arrprojectinfo[0]['Serial_no']?>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td align="center" style="width: 33%; border: solid 1px #000000;">
+                        project_info/customer :<?=$arrprojectinfo[0]['Drawing_no']?>
+                     </td>
+                     <td align="center" style="width: 33%; border: solid 1px #000000;">
+                        project_info :<?=$arrprojectinfo[0]['s_water']?>
+                     </td>
+                     <td align="center" style="width: 33%;" >
+                        <table   style="width: 100%;" border="1">
+                              <tr>
+                                  <td align="center" style="width: 33%; border: solid 1px #000000;"><?=$arrprojectinfo[0]['Pressure']?></td>
+                                  <td align="center" style="width: 33%; border: solid 1px #000000;"><?=$arrprojectinfo[0]['mix_percent']?></td>
+                                  <td align="center" style="width: 33%; border: solid 1px #000000;"><?=$arrprojectinfo[0]['tolerance_percent']?></td>
+                              </tr>
+                        </table>
+                     </td>
+                 </tr>
+            </table>      
+        </td>
+   </tr>
+   <tr>
+        <td align="center"  style="width: 100%;">
+                <table  cellspacing="0" style="width: 100%; border: solid 1px #000000;">	
+                        <tr>
+                          <th style="width: 11%; border: solid 1px #000000;"> 
+                              Div
+                          </th>
+                          <th style="width: 11%; border: solid 1px #000000;"> 
+                              P1
+                          </th>
+                          <th style="width: 11%; border: solid 1px #000000;">
+                               P2
+                          </th>
+                          <th style="width: 11%; border: solid 1px #000000;">
+                              P3
+                          </th>
+                          <th style="width: 11%; border: solid 1px #000000;">
+                               &Delta;P
+                          </th>
+                          <th style="width: 11%; border: solid 1px #000000;">
+                               &Delta;%
+                          </th>
+                          <th style="width: 11%; border: solid 1px #000000;">
+                                1/min (v)
+                          </th>
+                          <th style="width: 11%; border: solid 1px #000000;">
+                                1/min (s)
+                          </th>
+                          <th style="width: 12%; border: solid 1px #000000;">
+                               <img src="../../images/percent.png">
+                          </th>
+                       </tr>                   
+                    <?php
+                          unset($info);
+                        $info["table"]   = "testdata";
+                        $info["fields"]  = array("testdata.*"); 
+                        $info["where"]   = "1 AND TestID='".$_SESSION['TestID']."' AND Priority='1'  ORDER BY id DESC";
+                                            
+                        
+                        $arrtestdata =  $db->select($info);
+                        
+                        for($i=0;$i<count($arrtestdata);$i++)
+                        {
+               
+                     ?>
+                         <tr>
+                              <td align="center" style="width: 11%; border: solid 1px #000000;"><?=$arrtestdata[$i]['Instr_no']?></td>
+                              <td align="center" style="width: 11%; border: solid 1px #000000;"><?=$arrtestdata[$i]['P1']?></td>
+                              <td align="center" style="width: 11%; border: solid 1px #000000;"><?=$arrtestdata[$i]['P2']?></td>
+                              <td align="center" style="width: 11%; border: solid 1px #000000;"><?=$arrtestdata[$i]['DPressure']?></td>
+                              <td align="center" style="width: 11%; border: solid 1px #000000;"><?=$arrtestdata[$i]['DP']?></td>
+                              <td align="center" style="width: 11%; border: solid 1px #000000;"><?=$arrtestdata[$i]['Lmin']?></td>
+                              <td align="center" style="width: 11%; border: solid 1px #000000;"><?=$arrtestdata[$i]['SLmin']?></td>
+                              <td align="center" style="width: 11%; border: solid 1px #000000;"><?=$arrtestdata[$i]['SP']?></td>
+                              <td align="center" style="width: 12%; border: solid 1px #000000;"><?=$arrtestdata[$i]['Priority']?></td>			
+                         </tr>
+                         
+                     <?php
+                              }
+                    ?>		  		  			
+            </table>
+        </td>
+   </tr>
+   <tr>
+        <td align="center" valign="top"  style="width: 100%;">
+                 <table   style="width: 100%; border: solid 1px #000000;">				
+                     <tr>
+                         <td  align="center"  style="width: 50%; border: solid 1px #000000;">
+                                date_time:<?=$arrprojectinfo[0]['date_time']?>
+                         </td>
+                          <td  align="center"  style="width: 50%; border: solid 1px #000000;">
+                                Userid:<?=$arrprojectinfo[0]['Userid']?>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td  align="center"  style="width: 50%; border: solid 1px #000000;">
+                               date_time_approve:<?=$arrprojectinfo[0]['date_time_approve']?>
+                         </td>
+                          <td align="center"  style="width: 50%; border: solid 1px #000000;">
+                              Approvedby:<?=$arrprojectinfo[0]['Approvedby']?>
+                         </td>
+                     </tr>
+       			 </table>
+        </td>
+   </tr>
+</table>

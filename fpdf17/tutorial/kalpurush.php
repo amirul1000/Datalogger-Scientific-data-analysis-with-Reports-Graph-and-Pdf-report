@@ -1,0 +1,24 @@
+<?php
+$type = 'TrueType';
+$name = 'Kalpurush';
+$desc = array('Ascent'=>1000,'Descent'=>-400,'CapHeight'=>615,'Flags'=>32,'FontBBox'=>'[-555 -402 1118 1033]','ItalicAngle'=>0,'StemV'=>70,'MissingWidth'=>672);
+$up = -307;
+$ut = 20;
+$cw = array(
+	chr(0)=>672,chr(1)=>672,chr(2)=>672,chr(3)=>672,chr(4)=>672,chr(5)=>672,chr(6)=>672,chr(7)=>672,chr(8)=>672,chr(9)=>672,chr(10)=>672,chr(11)=>672,chr(12)=>672,chr(13)=>672,chr(14)=>672,chr(15)=>672,chr(16)=>672,chr(17)=>672,chr(18)=>672,chr(19)=>672,chr(20)=>672,chr(21)=>672,
+	chr(22)=>672,chr(23)=>672,chr(24)=>672,chr(25)=>672,chr(26)=>672,chr(27)=>672,chr(28)=>672,chr(29)=>672,chr(30)=>672,chr(31)=>672,' '=>364,'!'=>272,'"'=>425,'#'=>469,'$'=>469,'%'=>690,'&'=>667,'\''=>250,'('=>317,')'=>317,'*'=>447,'+'=>410,
+	','=>229,'-'=>337,'.'=>229,'/'=>469,'0'=>469,'1'=>469,'2'=>469,'3'=>469,'4'=>469,'5'=>469,'6'=>469,'7'=>469,'8'=>469,'9'=>469,':'=>229,';'=>229,'<'=>439,'='=>439,'>'=>439,'?'=>433,'@'=>807,'A'=>595,
+	'B'=>550,'C'=>536,'D'=>593,'E'=>496,'F'=>478,'G'=>583,'H'=>654,'I'=>298,'J'=>305,'K'=>578,'L'=>476,'M'=>806,'N'=>649,'O'=>600,'P'=>523,'Q'=>600,'R'=>561,'S'=>476,'T'=>551,'U'=>654,'V'=>650,'W'=>850,
+	'X'=>615,'Y'=>594,'Z'=>523,'['=>308,'\\'=>469,']'=>308,'^'=>492,'_'=>469,'`'=>319,'a'=>459,'b'=>508,'c'=>437,'d'=>520,'e'=>462,'f'=>311,'g'=>488,'h'=>552,'i'=>271,'j'=>259,'k'=>500,'l'=>271,'m'=>803,
+	'n'=>552,'o'=>503,'p'=>530,'q'=>515,'r'=>396,'s'=>386,'t'=>344,'u'=>530,'v'=>493,'w'=>706,'x'=>503,'y'=>493,'z'=>442,'{'=>336,'|'=>229,'}'=>336,'~'=>488,chr(127)=>672,chr(128)=>672,chr(129)=>672,chr(130)=>672,chr(131)=>672,
+	chr(132)=>672,chr(133)=>672,chr(134)=>672,chr(135)=>672,chr(136)=>672,chr(137)=>672,chr(138)=>672,chr(139)=>672,chr(140)=>672,chr(141)=>672,chr(142)=>672,chr(143)=>672,chr(144)=>672,chr(145)=>672,chr(146)=>672,chr(147)=>672,chr(148)=>672,chr(149)=>672,chr(150)=>672,chr(151)=>672,chr(152)=>672,chr(153)=>672,
+	chr(154)=>672,chr(155)=>672,chr(156)=>672,chr(157)=>672,chr(158)=>672,chr(159)=>672,chr(160)=>672,chr(161)=>672,chr(162)=>672,chr(163)=>672,chr(164)=>672,chr(165)=>672,chr(166)=>672,chr(167)=>672,chr(168)=>672,chr(169)=>672,chr(170)=>672,chr(171)=>672,chr(172)=>672,chr(173)=>672,chr(174)=>672,chr(175)=>672,
+	chr(176)=>672,chr(177)=>672,chr(178)=>672,chr(179)=>672,chr(180)=>672,chr(181)=>672,chr(182)=>672,chr(183)=>672,chr(184)=>672,chr(185)=>672,chr(186)=>672,chr(187)=>672,chr(188)=>672,chr(189)=>672,chr(190)=>672,chr(191)=>672,chr(192)=>672,chr(193)=>672,chr(194)=>672,chr(195)=>672,chr(196)=>672,chr(197)=>672,
+	chr(198)=>672,chr(199)=>672,chr(200)=>672,chr(201)=>672,chr(202)=>672,chr(203)=>672,chr(204)=>672,chr(205)=>672,chr(206)=>672,chr(207)=>672,chr(208)=>672,chr(209)=>672,chr(210)=>672,chr(211)=>672,chr(212)=>672,chr(213)=>672,chr(214)=>672,chr(215)=>672,chr(216)=>672,chr(217)=>672,chr(218)=>672,chr(219)=>672,
+	chr(220)=>672,chr(221)=>672,chr(222)=>672,chr(223)=>672,chr(224)=>672,chr(225)=>672,chr(226)=>672,chr(227)=>672,chr(228)=>672,chr(229)=>672,chr(230)=>672,chr(231)=>672,chr(232)=>672,chr(233)=>672,chr(234)=>672,chr(235)=>672,chr(236)=>672,chr(237)=>672,chr(238)=>672,chr(239)=>672,chr(240)=>672,chr(241)=>672,
+	chr(242)=>672,chr(243)=>672,chr(244)=>672,chr(245)=>672,chr(246)=>672,chr(247)=>672,chr(248)=>672,chr(249)=>672,chr(250)=>672,chr(251)=>672,chr(252)=>672,chr(253)=>672,chr(254)=>672,chr(255)=>672);
+$enc = 'iso-639-1';
+$diff = '128 /.notdef 130 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 142 /.notdef 145 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 158 /.notdef /.notdef 161 /kokaithai /khokhaithai /khokhuatthai /khokhwaithai /khokhonthai /khorakhangthai /ngonguthai /chochanthai /chochingthai /chochangthai /sosothai /chochoethai /yoyingthai /dochadathai /topatakthai /thothanthai /thonangmonthothai /thophuthaothai /nonenthai /dodekthai /totaothai /thothungthai /thothahanthai /thothongthai /nonuthai /bobaimaithai /poplathai /phophungthai /fofathai /phophanthai /fofanthai /phosamphaothai /momathai /yoyakthai /roruathai /ruthai /lolingthai /luthai /wowaenthai /sosalathai /sorusithai /sosuathai /hohipthai /lochulathai /oangthai /honokhukthai /paiyannoithai /saraathai /maihanakatthai /saraaathai /saraamthai /saraithai /saraiithai /sarauethai /saraueethai /sarauthai /sarauuthai /phinthuthai /.notdef /.notdef /.notdef /.notdef /bahtthai /saraethai /saraaethai /saraothai /saraaimaimuanthai /saraaimaimalaithai /lakkhangyaothai /maiyamokthai /maitaikhuthai /maiekthai /maithothai /maitrithai /maichattawathai /thanthakhatthai /nikhahitthai /yamakkanthai /fongmanthai /zerothai /onethai /twothai /threethai /fourthai /fivethai /sixthai /seventhai /eightthai /ninethai /angkhankhuthai /khomutthai /.notdef /.notdef /.notdef /.notdef';
+$file = 'kalpurush.z';
+$originalsize = 314592;
+?>
